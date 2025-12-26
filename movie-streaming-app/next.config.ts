@@ -11,8 +11,7 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: true, // For better compatibility with static exports if needed
   },
-  // Enable standalone output for Vercel deployment
-  output: 'standalone',
+  // PWA configuration will be handled via service worker
 };
 
 export default nextConfig;

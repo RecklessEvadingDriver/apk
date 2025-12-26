@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
   title: "MovieStream - Watch Movies & Series Online",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-gray-900 text-white antialiased font-sans">
+        <ServiceWorkerRegistration />
         <Header />
         <main className="min-h-screen">{children}</main>
       </body>
